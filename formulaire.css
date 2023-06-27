@@ -1,0 +1,228 @@
+/* ================================ LES REGLAGES DE BASES============================ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital@0;1&display=swap'); */
+* 
+{
+margin: 0px;
+    font-family: "Montserrat";
+    outline: none;
+}
+body,html
+{
+    width: 100%;
+    height: 100%;
+    --colorone-primary:rgb(73, 118, 255);
+    --colortwo-primary:rgb(231, 21, 140);
+    --colorone-primary1:rgb(154, 179, 255);
+    --colortwo-primary2:rgb(244, 128, 193);
+    --colorthird-primary:rgb(163, 0, 251);
+    --textcolor: rgb(0, 0, 0); 
+   
+}
+body,.container,.style,.image,.formulaire,.previous-btn,.login,.next
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    background: transparent ;
+    backdrop-filter: blur(150px);
+    z-index: 1;
+}
+.box
+{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.first
+{
+    top: -10%;
+    left: -20px;
+    width: 200px;
+    height: 200px;
+    background-color: var(--colorone-primary);
+}
+
+.second
+{
+    bottom:0;
+    right: 0px;
+    width: 300px;
+    height: 300px;
+    background-color: var(--colortwo-primary);
+}
+
+/* ================================ LES REGLAGES DE BASES============================ */
+
+/* ================================ LA PARTIE STYLE AVEC L'IMAGE============================ */
+
+ .style
+{
+    width: 1000px;
+    height: 600px;
+    background-color: rgba(58, 58, 58, 0.051);
+    backdrop-filter: blur(5px);
+    border-radius: 10px ;
+    
+}
+
+.image
+{
+    width: 50%;
+    /* border: 1px solid black; */
+}
+.image img 
+{
+    width: 300px;
+    height: 300px;
+}
+/* ================================ LA PARTIE STYLE AVEC L'IMAGE============================ */
+
+/* ================================ LE FORMULAIRE ============================ */
+.formulaire
+{
+    width: 50%;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 550px;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+.form_container
+{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid black; */
+}
+.firstform,.secondform,.thirdform
+{
+   display: inline-block;
+   min-width: 100%;
+   /* border: 1px solid black; */
+}
+
+/* ======gestion de la première serie ======= */
+   
+
+    .formulaire .title 
+    {
+        width: 100%;
+        text-align: center;
+        color:var(--textcolor);
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .formulaire form .inputfirst
+    {
+        width: 70%;
+        outline: none;
+        border: 0px;
+        /* border-radius: 5px; */
+        height: 30px;
+        background: transparent;
+        margin-left: 50px;
+        padding-left: 25px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgb(88, 88, 88);
+    }
+    .formulaire form input::placeholder
+    {
+        font-size: 14px;
+    }
+
+    .validate
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 70%;
+        height: 50px;
+    }
+
+    .next
+    {
+        position: relative;
+        z-index: 1;
+        width: 100px;
+        height: 35px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.15);
+        overflow: hidden;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        font-size: 13px;
+    }
+    .next::before
+    {
+        box-sizing: border-box;
+        border-radius: 5px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--colortwo-primary2);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform: scaleX(0);
+        transition: transform 0.5s  cubic-bezier(0.5, 1.6, 0.4, 0.7);
+        transform-origin: 0 0;
+    }
+    .next:hover::before
+    {
+        transform: scaleX(1);
+    }
+    
+    .login
+    {
+        width: 85%;
+        justify-content: flex-end;
+        font-size: 13px;
+        padding-bottom: 20px;
+        /* border: 1px solid black; */
+    }
+
+    .login a 
+    {
+        text-decoration: none;
+        color: black;
+        transition: all 0.5s ease-in-out;
+        font-size: 13px;
+    }
+    .login a:hover
+    {
+    
+        letter-spacing: 0.5px;
+    }
+/* ======gestion de la première serie ======= */
+
+/* ================================ LE FORMULAIRE ============================ */
+
+@media screen  and (max-width : 500px) {
+    .style
+    {
+       flex-direction: column;
+       width: 100%;
+       height: 100%;  
+    }
+    .formulaire
+    {
+        width: 100%;
+    }
+}
+
+/* ================================ LE RESPONSIVE ============================ */
+
+/* ======le Rsponsive======= */
