@@ -118,7 +118,7 @@ body,.container,.style,.image,.formulaire,.previous-btn,.login,.next
         width: 100%;
         text-align: center;
         color:var(--textcolor);
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 50px;
     }
 
@@ -127,7 +127,8 @@ body,.container,.style,.image,.formulaire,.previous-btn,.login,.next
         width: 70%;
         outline: none;
         border: 0px;
-        /* border-radius: 5px; */
+        font-size: 14px;
+        font-weight: bold;
         height: 30px;
         background: transparent;
         margin-left: 50px;
@@ -138,6 +139,8 @@ body,.container,.style,.image,.formulaire,.previous-btn,.login,.next
     .formulaire form input::placeholder
     {
         font-size: 14px;
+        color: rgb(58, 58, 58);
+        font-weight: bold;
     }
 
     .validate
@@ -162,7 +165,8 @@ body,.container,.style,.image,.formulaire,.previous-btn,.login,.next
         outline: none;
         border: 0;
         cursor: pointer;
-        font-size: 13px;
+        font-size: 14px;
+        font-weight: bold;
     }
     .next::before
     {
@@ -189,7 +193,7 @@ body,.container,.style,.image,.formulaire,.previous-btn,.login,.next
     {
         width: 85%;
         justify-content: flex-end;
-        font-size: 13px;
+        font-size: 14px;
         padding-bottom: 20px;
         /* border: 1px solid black; */
     }
@@ -197,9 +201,10 @@ body,.container,.style,.image,.formulaire,.previous-btn,.login,.next
     .login a 
     {
         text-decoration: none;
-        color: black;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
         transition: all 0.5s ease-in-out;
-        font-size: 13px;
+        font-size: 14px;
     }
     .login a:hover
     {
